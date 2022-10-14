@@ -28,6 +28,10 @@ public class Shape {
         return filled ? "filled" : "not filled";
     }
 
+    public double getArea() {
+        return 1.0;
+    }
+
     public void setFilled(boolean filled) {
         this.filled = filled;
     }

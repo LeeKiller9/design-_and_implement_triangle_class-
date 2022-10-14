@@ -55,8 +55,10 @@ public class Triangle extends Shape {
         return array;
     }
 
+    @Override
     public double getArea() {
         double halfPerimeter = this.getPerimeter() / 2;
+        System.out.print("Triangle area: ");
         return Math.sqrt(halfPerimeter * (halfPerimeter - this.getSide1()) * (halfPerimeter - this.getSide2()) * (halfPerimeter - this.getSide3()));
     }
 
@@ -67,6 +69,6 @@ public class Triangle extends Shape {
     @Override
     public String toString() {
         return "Triangle: side1 = " + side1 + ", side2 = " + side2 + ", side3 = " + side3 + ", color = " + super.getColor()
-                + ", perimeter = " + this.getPerimeter() + ", area = " + this.getArea();
+                + ", perimeter = " + this.getPerimeter();
     }
 }
